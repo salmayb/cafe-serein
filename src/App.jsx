@@ -102,7 +102,7 @@ export default function SereinCafePage() {
 
             <div className="flex flex-wrap gap-4">
               <a
-                href="./menu.pdf"
+                href="/cafe-serein/menu.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="rounded-2xl px-6 py-3 font-medium transition hover:scale-105"
@@ -309,7 +309,7 @@ export default function SereinCafePage() {
           <br></br>
           <div className="flex justify-center">
             <a
-              href="./menu.pdf"
+              href="/cafe-serein/menu.pdf"
               target="_blank"
               rel="noopener noreferrer"
               className="rounded-2xl px-6 py-3 font-medium transition hover:scale-105"
