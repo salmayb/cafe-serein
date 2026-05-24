@@ -102,7 +102,7 @@ export default function SereinCafePage() {
 
             <div className="flex flex-wrap gap-4">
               <a
-                href="/menu.pdf"
+                href="./menu.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="rounded-2xl px-6 py-3 font-medium transition hover:scale-105"
@@ -172,7 +172,7 @@ export default function SereinCafePage() {
                 className="rounded-3xl p-6"
                 style={{ backgroundColor: "#e6d5c4" }}
               >
-                <h3 className="mb-2 text-xl font-semibold">Wi‑Fi rápido</h3>
+                <h3 className="mb-2 text-xl font-semibold">Wi-Fi rapide</h3>
                 <p className="text-sm leading-relaxed text-[#6d5a4a]">
                   Des espaces confortables pour travailler ou étudier pendant des heures.
                 </p>
@@ -182,7 +182,7 @@ export default function SereinCafePage() {
                 className="rounded-3xl p-6"
                 style={{ backgroundColor: "#c1cbbe" }}
               >
-                <h3 className="mb-2 text-xl font-semibold">Ambiente sereno</h3>
+                <h3 className="mb-2 text-xl font-semibold">Ambiance sereine</h3>
                 <p className="text-sm leading-relaxed text-[#6d5a4a]">
                   Musique douce, éclairage chaleureux et espaces calmes.                </p>
               </div>
@@ -309,7 +309,7 @@ export default function SereinCafePage() {
           <br></br>
           <div className="flex justify-center">
             <a
-              href="/menu.pdf"
+              href="./menu.pdf"
               target="_blank"
               rel="noopener noreferrer"
               className="rounded-2xl px-6 py-3 font-medium transition hover:scale-105"
