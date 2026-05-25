@@ -89,7 +89,7 @@ export default function SereinCafePage() {
               className="mb-4 inline-block rounded-full px-4 py-2 text-sm tracking-wide"
               style={{ backgroundColor: "#c1cbbe" }}
             >
-              Cafétéria • Studio • Calme
+              Calme • Confort • Flexibilité pour travailler autrement
             </p>
 
             <h1 className="mb-6 font-['Cormorant_Garamond'] text-6xl font-semibold leading-tight md:text-8xl">
