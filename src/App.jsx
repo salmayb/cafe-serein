@@ -431,15 +431,15 @@ export default function SereinCafePage() {
         viewport={{ once: true, amount: 0.2 }}
         variants={fadeUp}
       >
-        <div className="mx-auto grid max-w-7xl gap-14 lg:grid-cols-2">
-
-          <div>
+        <div className="mx-auto grid max-w-7xl items-center gap-14 lg:grid-cols-2">
+          <div className="aspect-[16/9] w-full">
             <img
               src={img11}
               alt="Serein Café"
-              className="h-full min-h-[500px] w-full rounded-[32px] object-cover shadow-xl"
+              className="h-full w-full rounded-[32px] object-cover shadow-xl"
             />
           </div>
+
 
           <div className="flex flex-col justify-center">
             <p className="mb-3 text-sm uppercase tracking-[0.3em] text-[#8c725b]">
@@ -478,7 +478,7 @@ export default function SereinCafePage() {
 
                 <p className="mt-1 text-[#6d5a4a]"> 8:30 — 19:00 (période normale)</p> <p> 8:30 — 21:00 (bloqus/examens)</p><br></br>
                 <p className="text-lg font-medium">Samedi — Dimanche</p>
-                <p className="mt-1 text-[#6d5a4a]"> 9:00 — 18:30 (période normale)</p> <p> 9:00 — 21:00 (bloqus/examens)</p> 
+                <p className="mt-1 text-[#6d5a4a]"> 9:00 — 18:30 (période normale)</p> <p> 9:00 — 21:00 (bloqus/examens)</p>
 
               </div>
 
