@@ -9,6 +9,7 @@ import img8 from "./assets/8.png";
 import img9 from "./assets/9.png";
 import img10 from "./assets/10.png";
 import img11 from "./assets/11.png";
+import img12 from "./assets/15.png";
 
 
 import { motion } from "framer-motion";
@@ -16,25 +17,32 @@ import { useState } from "react";
 
 export default function SereinCafePage() {
   const menuItems = [
-    {
-      name: "Flat White",
-      description: "Un café doux et équilibré pour les longues séances d'étude.",
-      price: "4,80€",
-      image: img7,
-    },
-    {
-      name: "Matcha Latte",
-      description: "Crémeux, léger et parfait pour des après-midi de détente.",
-      price: "5,40€",
-      image: img8,
-    },
-    {
-      name: "Croissant Artisanal",
-      description: "Cuisiné tous les matins.",
-      price: "2,90€",
-      image: img9,
-    },
-  ];
+  {
+    name: "Flat White",
+    description: "Café suave y equilibrado para sesiones largas de estudio.",
+    price: "4,80€",
+    image: img7,
+  },
+  {
+    name: "Matcha Latte",
+    description: "Cremoso, ligero y perfecto para tardes tranquilas.",
+    price: "5,40€",
+    image: img8,
+  },
+  {
+    name: "Croissant Artesano",
+    description: "Horneado cada mañana.",
+    price: "2,90€",
+    image: img9,
+  },
+  {
+    name: "Bagel Saumon & Salade Avocat",
+    description:
+      "Bagel au saumon fumé et fromage frais accompagné d’une salade fraîche à l’avocat.",
+    price: "Bagel 13,90€ • Salade 14,90€",
+    image: img12,
+  },
+];
 
   const reviews = [
     {
@@ -191,83 +199,90 @@ export default function SereinCafePage() {
         </div>
       </motion.section>
 
-      {/* CABINAS DE ESTUDIO */}
-      <motion.section
-        className="px-6 py-20 md:px-16 lg:px-24"
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true, amount: 0.2 }}
-        variants={fadeUp}
-      >
-        <div className="mx-auto grid max-w-7xl gap-14 lg:grid-cols-2">
+      {/* CABINES D'ÉTUDE */}
+<motion.section
+  className="px-6 py-20 md:px-16 lg:px-24"
+  initial="hidden"
+  whileInView="visible"
+  viewport={{ once: true, amount: 0.2 }}
+  variants={fadeUp}
+>
+  <div className="mx-auto grid max-w-7xl gap-14 lg:grid-cols-2">
 
-          <div className="flex flex-col justify-center">
-            <p className="mb-3 text-sm uppercase tracking-[0.3em] text-[#8c725b]">
-              Study Pods
-            </p>
+    <div className="flex flex-col justify-center">
+      <p className="mb-3 text-sm uppercase tracking-[0.3em] text-[#8c725b]">
+        Study Pods
+      </p>
 
-            <h2 className="mb-6 font-['Cormorant_Garamond'] text-6xl font-semibold leading-tight md:text-5xl">
-              Des espaces conçus pour vous concentrer.
-            </h2>
+      <h2 className="mb-6 font-['Cormorant_Garamond'] text-6xl font-semibold leading-tight md:text-5xl">
+        Des espaces conçus pour vous concentrer.
+      </h2>
 
-            <p className="mb-8 leading-relaxed text-[#6d5a4a]">
-              Chez Serein, vous pouvez réserver des cabines privées pour étudier,
-              travailler ou vous réunir en toute tranquillité. Elles sont conçues pour vous aider
-              à rester concentré sans perdre la chaleur d’un café.
-            </p>
+      <p className="mb-8 leading-relaxed text-[#6d5a4a]">
+        Chez Serein, nous proposons des cabines privées individuelles et en groupe
+        pour étudier, travailler ou se réunir dans un environnement calme et confortable.
+        Les réservations s’effectuent directement à la cafétéria.
+      </p>
 
-            <div className="grid gap-5 sm:grid-cols-2">
+      <div className="grid gap-5 sm:grid-cols-2">
 
-              <div
-                className="rounded-3xl p-6"
-                style={{ backgroundColor: "#e6d5c4" }}
-              >
-                <h3 className="mb-3 text-2xl font-semibold">
-                  Individuel
-                </h3>
+        <div
+          className="rounded-3xl p-6"
+          style={{ backgroundColor: "#e6d5c4" }}
+        >
+          <h3 className="mb-3 text-2xl font-semibold">
+            Individuel
+          </h3>
 
-                <p className="text-sm leading-relaxed text-[#6d5a4a]">
-                  Un espace privé et silencieux pour de longues sessions
-                  d’étude ou de travail approfondi.
-
-                </p>
-              </div>
-
-              <div
-                className="rounded-3xl p-6"
-                style={{ backgroundColor: "#c1cbbe" }}
-              >
-                <h3 className="mb-3 text-2xl font-semibold">
-                  En groupe
-                </h3>
-
-                <p className="text-sm leading-relaxed text-[#6d5a4a]">
-                  Parfait pour les réunions, les projets universitaires
-                  ou les sessions collaboratives.
-                </p>
-              </div>
-            </div>
-
-            <div className="mt-8">
-              <button
-                onClick={() => setOpenBooking(true)}
-                className="rounded-2xl px-6 py-3 font-medium transition hover:scale-105"
-                style={{ backgroundColor: "#bb936e", color: "white" }}
-              >
-                Réserver une cabine
-              </button>
-            </div>
-          </div>
-
-          <div>
-            <img
-              src={img10}
-              alt="Cabinas de estudio"
-              className="h-full min-h-[520px] w-full rounded-[32px] object-cover shadow-xl"
-            />
-          </div>
+          <p className="text-sm leading-relaxed text-[#6d5a4a]">
+            Un espace privé et silencieux pour de longues sessions
+            d’étude ou de travail approfondi.
+          </p>
         </div>
-      </motion.section>
+
+        <div
+          className="rounded-3xl p-6"
+          style={{ backgroundColor: "#c1cbbe" }}
+        >
+          <h3 className="mb-3 text-2xl font-semibold">
+            En groupe
+          </h3>
+
+          <p className="text-sm leading-relaxed text-[#6d5a4a]">
+            Parfait pour les réunions, les projets universitaires
+            ou les sessions collaboratives.
+          </p>
+        </div>
+
+      </div>
+
+      <div
+        className="mt-8 rounded-3xl p-6"
+        style={{ backgroundColor: "#f4ede6" }}
+      >
+        <p className="mb-2 text-sm uppercase tracking-[0.2em] text-[#8c725b]">
+          Réservations
+        </p>
+
+        <p className="leading-relaxed text-[#6d5a4a]">
+          Les réservations des cabines se font directement sur place.
+          Notre équipe sera ravie de vous accompagner et de vous proposer
+          l’espace le plus adapté à vos besoins.
+        </p>
+      </div>
+
+    </div>
+
+    <div>
+      <img
+        src={img10}
+        alt="Cabines d'étude"
+        className="h-full min-h-[520px] w-full rounded-[32px] object-cover shadow-xl"
+      />
+    </div>
+
+  </div>
+</motion.section>
 
       {/* MENU */}
       <motion.section className="px-6 py-20 md:px-16 lg:px-24"
@@ -279,11 +294,11 @@ export default function SereinCafePage() {
               Menu
             </p>
             <h2 className="mb-6 font-['Cormorant_Garamond'] text-6xl font-semibold leading-tight md:text-6xl">
-              Café, matcha et une touche sucrée.
+              Café, matcha et une sélection de douceurs sucrées et salées.
             </h2>
           </div>
 
-          <div className="grid gap-8 md:grid-cols-3">
+          <div className="grid gap-8 md:grid-cols-2 xl:grid-cols-4">
             {menuItems.map((item) => (
               <div
                 key={item.name}
